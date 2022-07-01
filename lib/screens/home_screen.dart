@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
        p4_count++;
         total += p4_cost;
       }
-      if (msg == "watch") {
+      if (msg == "123456789") {
        p5_count++;
         total += p5_cost;
       }
