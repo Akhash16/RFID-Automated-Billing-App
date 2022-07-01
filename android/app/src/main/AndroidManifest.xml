@@ -2,7 +2,7 @@
     package="com.example.flutter_iot_app">
     <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="flutter_iot_app"
+        android:label="Smart Cart"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

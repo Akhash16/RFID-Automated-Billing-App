@@ -11,7 +11,7 @@ import '../main.dart';
 int lol = 0;
 
 String msg = 'hello';
-int total = 0, p1_count = 0, p2_count = 0, p1_cost = 199, p2_cost = 499;
+int total = 0, p1_count = 0, p2_count = 0, p3_count = 0, p4_count = 0,p5_count = 0 , p1_cost = 199, p2_cost = 499,p3_cost = 699, p4_cost = 799,p5_cost = 999;
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -66,12 +66,25 @@ class _HomePageState extends State<HomePage> {
       setState(() {});
 
       if (msg == "14718612223") {
-        p1_count++;
-        total += p1_cost;
+       p2_count++;
+        total += p2_cost;
       }
       if (msg == "2119223118") {
-        p2_count++;
-        total += p2_cost;
+        
+         p1_count++;
+        total += p1_cost;
+      }
+      if (msg == "airpods") {
+       p3_count++;
+        total += p3_cost; 
+      }
+      if (msg == "mac") {
+       p4_count++;
+        total += p4_cost;
+      }
+      if (msg == "watch") {
+       p5_count++;
+        total += p5_cost;
       }
     });
 
@@ -271,6 +284,138 @@ class _HomePageState extends State<HomePage> {
                                       const SizedBox(height: 10,),
                                       Text(
                                         "\$ $p2_cost.00   x   $p2_count",
+                                        style: const TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      : null,
+                ),
+                Container(
+                  child: p3_count > 0
+                      ? Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            color: const Color.fromARGB(31, 94, 91, 91),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 150,
+                                  height: 150,
+                                  child: Image.network(
+                                      "https://m.media-amazon.com/images/I/7120GgUKj3L._AC_UY218_.jpg"),
+                                  color: Colors.white,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(18.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        "iPods 2",
+                                        style: TextStyle(
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10,),
+                                      Text(
+                                        "\$ $p3_cost.00   x   $p3_count",
+                                        style: const TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      : null,
+                ),
+                Container(
+                  child: p4_count > 0
+                      ? Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            color: const Color.fromARGB(31, 94, 91, 91),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 150,
+                                  height: 150,
+                                  child: Image.network(
+                                      "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg"),
+                                  color: Colors.white,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(18.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        "Macbook Air",
+                                        style: TextStyle(
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10,),
+                                      Text(
+                                        "\$ $p4_cost.00   x   $p4_count",
+                                        style: const TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      : null,
+                ),
+                Container(
+                  child: p5_count > 0
+                      ? Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            color: const Color.fromARGB(31, 94, 91, 91),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 150,
+                                  height: 150,
+                                  child: Image.network(
+                                      "https://m.media-amazon.com/images/I/71nZ497gYtL._AC_UY218_.jpg"),
+                                  color: Colors.white,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(18.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        "iWatch SE",
+                                        style: TextStyle(
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10,),
+                                      Text(
+                                        "\$ $p5_cost.00   x   $p5_count",
                                         style: const TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w500,
