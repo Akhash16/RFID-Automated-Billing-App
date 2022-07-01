@@ -32,7 +32,6 @@ class _HomePageState extends State<HomePage> {
     client.onConnected = onConnected;
     client.onDisconnected = onDisconnected;
     client.onUnsubscribed = onUnsubscribed;
-    client.onSubscribed = onSubscribed;
     client.onSubscribeFail = onSubscribeFail;
     client.pongCallback = pong;
     client.keepAlivePeriod = 20;
@@ -74,11 +73,11 @@ class _HomePageState extends State<HomePage> {
          p1_count++;
         total += p1_cost;
       }
-      if (msg == "airpods") {
+      if (msg == "580532855483") {
        p3_count++;
         total += p3_cost; 
       }
-      if (msg == "mac") {
+      if (msg == "729512125086") {
        p4_count++;
         total += p4_cost;
       }
