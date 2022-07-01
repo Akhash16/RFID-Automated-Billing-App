@@ -179,7 +179,6 @@ class _HomePageState extends State<HomePage> {
                       ),
                       IconButton(
                         onPressed: () {
-                          // Navigator.pushNamed(context, THSSettingsPage.id);
                         },
                         icon: const Icon(
                           Icons.delete_forever_rounded,
@@ -198,14 +197,11 @@ class _HomePageState extends State<HomePage> {
                       ? Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            color: const Color.fromARGB(31, 134, 133, 133),
+                            color: Color.fromARGB(31, 94, 91, 91),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(Radius.circular(20))
-                                  ),
                                   width: 150,
                                   height: 150,
                                   child: Image.network(
@@ -250,7 +246,7 @@ class _HomePageState extends State<HomePage> {
                       ? Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
-                            color: const Color.fromARGB(31, 134, 133, 133),
+                            color: const Color.fromARGB(31, 94, 91, 91),
                             child: Row(
                               children: [
                                 Container(
