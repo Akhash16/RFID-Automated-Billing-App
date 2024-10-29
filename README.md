@@ -21,6 +21,11 @@ An IoT-enabled mobile application designed to streamline and secure the shopping
 2. **Weight Sensors**: Placed in aisles and carts to detect item presence, adding a layer of security.
 3. **Mobile App**: Customers use the app to review items in their cart and make payments.
 
+## Related Research
+
+For a deeper understanding of automated billing systems and IoT applications in retail, refer to this research paper:
+- [RFID-Enabled Automated Billing System For Retail Establishments](https://ieeexplore.ieee.org/document/10128554) published by IEEE
+
 ## Setup and Installation
 
 1. **Clone the Repository**:
